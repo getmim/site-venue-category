@@ -31,7 +31,7 @@ class CategoryController extends \Site\Controller
             'venue_category' => $category->id
         ];
 
-        $venues = VCChain::get($cond, $rpp, $page, ['id' => 'DESC']);
+        $venues = VCChain::get($cond, $rpp, $page, ['id' => 'DESC']) ?? [];
         if($venues){
             $venues = array_column($venues, 'venue');
             $venues = Venue::get(['id'=>$venues]);
