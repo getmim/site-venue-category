@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'site-venue-category',
-    '__version' => '0.0.2',
+    '__version' => '0.0.3',
     '__git' => 'git@github.com:getmim/site-venue-category.git',
     '__license' => 'MIT',
     '__author' => [
@@ -12,8 +12,8 @@ return [
     ],
     '__files' => [
         'modules/site-venue-category' => ['install','update','remove'],
-        'app/site-venue-category' => ['install','update','remove'],
-        'theme/site/venue/category' => ['install','update','remove']
+        'app/site-venue-category' => ['install','remove'],
+        'theme/site/venue/category' => ['install','remove']
     ],
     '__dependencies' => [
         'required' => [

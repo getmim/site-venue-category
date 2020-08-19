@@ -90,7 +90,7 @@ class VenueCategory{
             }
 
             $price = $venue->prices;
-            $venue_schema['item']['priceRange'] = sprintf('%s %d - %s %d', $price->currency, $price->min, $price->currency, $price->max);
+            $venue_schema['item']['priceRange'] = sprintf('%s %d - %s %d', $price->currency->value, $price->min->value, $price->currency->value, $price->max->value);
 
             $contact = $venue->contact;
             if(isset($contact->phone) && $contact->phone)
